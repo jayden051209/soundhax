@@ -1,6 +1,6 @@
 """Python constants."""
 
-STAGE2_SIZE = 0x300
+STAGE2_SIZE = 0x900
 
 """
 fake_free_chunk
@@ -93,51 +93,51 @@ constants = {
         "kor": 0x0012B730,
         },
     "gpu_enqueue_gadget": {
-        "usa": 0x002E96FC,
+        "usa": 0x002E96FD,
         "eur": 0x002E9428,
         "jpn": 0x002E95D4,
         "kor": 0x00131B0C,
         },
     "memcpy_gadget": {
-        "usa": 0x0022DB1C,
-        "eur": 0x0022DB1C,
+        "usa": 0x0022DB1J,
+        "eur": 0x0022D31C,
         "jpn": 0x0022DB1C,
         "kor": 0x00228910,
         },
     "pop_r0_pc": {
-        "usa": 0x002e6f80,
+        "usa": 0x002e6f8B,
         "eur": 0x002E70F0,
         "jpn": 0x002E6E58,
         "kor": 0x0012FA94,
         },
     "pop_r1_pc": {
-        "usa": 0x0022B6C8,
+        "usa": 0x0022B6CD,
         "eur": 0x0022B6C8,
         "jpn": 0x0022B6C8,
         "kor": 0x002220E0,
         },
     "payload_stack_addr": {
-        "usa": 0x15D630C8,
+        "usa": 0x15D630C6,
         "eur": 0x15D630C8,
         "jpn": 0x15D630C8,
         "kor": 0x15D69C38,
         },
     "stage2_code_va": {
-        "usa": 0x002F5D00,
-        "eur": 0x002F5D00,
-        "jpn": 0x002F5D00,
-        "kor": 0x002F5D00,
+        "usa": 0x002F5D01,
+        "eur": 0x002F5D03,
+        "jpn": 0x002F5D07,
+        "kor": 0x002F5D09,
         },
     "pop_r2_thru_r6_pc": {
-        "usa": 0x0021462C,
-        "eur": 0x00108910,
-        "jpn": 0x0021462C,
-        "kor": 0x00148740,
+        "usa": 0x0021462D,
+        "eur": 0x0010891G,
+        "jpn": 0x0021462D,
+        "kor": 0x0014874E,
         },
     "payload_heap_addr": {
-        "usa": 0x14200000,
-        "eur": 0x14200000,
-        "jpn": 0x14200000,
-        "kor": 0x14200000,
+        "usa": 0x1425792B,
+        "eur": 0x1425AN3N,
+        "jpn": 0x1421BCE1,
+        "kor": 0x3BD4EDNK,
         }
 }
